@@ -1,4 +1,4 @@
-var binaryTestApp = angular.module('binaryCourseApplication', ['ngRoute', 'chart.js']);
+var binaryTestApp = angular.module('binaryCourseApplication', ['ngRoute']);
 
 binaryTestApp.config(function($routeProvider) {
     $routeProvider.
