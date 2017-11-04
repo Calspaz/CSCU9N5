@@ -1,0 +1,162 @@
+/*nav bar customisations*/
+nav {
+	background-color: #582C83;
+    height: 79px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav form {
+    height: 100%; 
+}
+
+nav .input-field {
+    margin: 0;
+    height: 100%;
+}
+
+nav ul li {
+	height:64px;
+}
+
+nav ul a {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.brand-colour {
+	background-color: #582C83;
+}
+
+.material-icons.md-48 { font-size: 38px; }
+@media only screen and (min-width: 991px) {
+.material-icons.md-48 { font-size: 68px; }
+}
+
+/*Logo customisations*/
+.navbar-brand {
+    float: left;
+    padding: 12px 10px;
+    height: 64px;
+}
+
+.navbar-brand img {
+    float: left;
+    margin-top: -6px;
+    height: 54px;
+    width: 225px;
+}
+@media only screen and (max-width: 600px) {
+.navbar-brand img {width: 165px;}
+.nav {height: 150px;}
+}
+/*Creates padding between sides of screen and main ng-view. Used on index page*/
+.page-spacer {
+	padding: 0 15px;
+}
+
+ /*Moves notes to the left when creating responses*/
+ .row .col.s11 {
+ 	margin-left:0;
+ }
+
+ .card {
+ 	border-top-right-radius: 10px;
+ 	border-top-left-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+ 	border-bottom-right-radius: 10px;
+ }
+
+ .card-header {
+     border-bottom-left-radius: 0;
+ 	border-bottom-right-radius: 0;
+ }
+
+ .card .card-content {
+    word-wrap: break-word;
+    word-break: normal;
+ }
+
+.progress {
+    height: 15px;
+    border-radius: 0;
+}
+
+.progress .determinate {
+    background-color: #000000;
+}
+
+.row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card {
+    margin: 0;
+    background-color:	#e5ba06;
+    box-shadow: none;
+}
+
+.card .card-content .card-title {
+    text-transform: uppercase;
+}
+
+.card .card-action {
+    text-align: right;
+    box-shadow: inset 0 0 0 0 #31302B;
+        border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+}
+
+.card-action button {
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+-webkit-transition: all ease 2s;
+	-moz-transition: all ease 2s;
+	transition: all ease 2s;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0;
+}
+
+#submit-btn-modal-row, .card-action #submit-btn-modal {
+    height: 0;
+    margin: 0;
+}
+
+.card-action #submit-btn-modal:hover {
+    box-shadow: inset 225px 0 0 0 #e0e0e0;
+}
+
+.card-action button:hover {
+    box-shadow: inset 600px 0 0 0 #e0e0e0;
+    color: #282828!important;
+    background-color: #ffffff!important;
+    border: 2px solid #e0e0e0;
+} 
+
+.card .card-difficulty {
+    height: auto;
+}
+
+.card-d {
+    text-align: center;
+    padding: 12.5px;
+    cursor: pointer;
+}
+
+.introduction-para {
+    margin-top: 22px;
+}
+
+.hoverable {
+    -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.hoverable:hover {
+    -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+     transform: scale(1.1, 1.1);
+}

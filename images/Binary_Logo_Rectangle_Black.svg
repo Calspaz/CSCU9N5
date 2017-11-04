@@ -1,0 +1,17 @@
+<svg width="2000" height="450" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="452" width="2002" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="155.333615" rx="664.001235" id="svg_18" cy="247.333409" cx="1274.000442" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <rect transform="rotate(89.90290069580078 193.51989746093744,701.244873046875) " stroke="#000" id="svg_5" height="228.964829" width="57.010228" y="586.762455" x="165.014763" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <text stroke="#000" transform="matrix(1.320853352546692,0,0,1,-55.988910019397736,0) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="250" id="svg_13" y="290" x="244.094503" stroke-opacity="null" stroke-width="0" fill="#ffffff">1</text>
+  <text style="cursor: move;" stroke="#000" transform="matrix(1.3071999549865723,0,0,1,-83.71198773384094,0) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="250" id="svg_14" y="286" x="373.734212" stroke-opacity="null" stroke-width="0" fill="#ffffff">0</text>
+  <text stroke="#000" transform="matrix(1.3071999549865723,0,0,1,-83.71198773384094,0) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="250" id="svg_15" y="286" x="154.180961" stroke-opacity="null" stroke-width="0" fill="#ffffff">0</text>
+  <text stroke="#000" transform="matrix(1.320853352546692,0,0,1,-55.988910019397736,0) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="250" id="svg_16" y="290" x="26.365745" stroke-opacity="null" stroke-width="0" fill="#ffffff">1</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="160" id="svg_17" y="290" x="667.833342" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff">Binary Course</text>
+ </g>
+</svg>
