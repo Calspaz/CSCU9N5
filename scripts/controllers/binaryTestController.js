@@ -23,7 +23,7 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
             storage: false,
             template: function () {
                 return (
-                        "<div class='popover tour'>" + 
+                        "<div id='refresh-memory-popover' class='popover tour'>" + 
                         "<div class='arrow'></div>" +
                         "<h3 class='popover-title'></h3>" +
                         "<div class='popover-content'></div>" +
@@ -56,14 +56,14 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
                 },
                 {
                     element: "#tour-column-bottom-inputs",
-                    title: "Thirdly...",
+                    title: "Fourthly...",
                     content: "If a bit is 'on', the header value shown at the top of that column is added to the total. As you'd expect if a bit is 'off', the total value of the 8 bit byte doesn't change.",
                     placement: "bottom"
                 },
                 {
                     element: "#tour-column-summary",
                     title: "Finally",
-                    content: "All of the bits that are turned on (value = 1) have their header values added together to convert their binary value into a decimal value. Have a play around with the empty byte's and try to understand how it works. When you feel confident, go through it without any help.",
+                    content: "All of the bits that are turned on (value = 1) have their header values added together to convert their binary value into a decimal value. Have a play around with the empty byte's and try to understand how it works. When you feel confident, give the binary test a shot!",
                     placement: "right"
                 }
             ]

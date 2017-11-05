@@ -6,11 +6,7 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
 		$('#optionsModal').modal();
 	});
 
-	$(document).ready(function () {
-		$(".dropdown-button").dropdown();
-	});
-
-	$scope.dismiss = function() {
+	$scope.dismiss = function () {
 		$('#optionsModal').modal('close');
 	};
 
@@ -23,20 +19,26 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
 		sessionStorage.setItem("storedPath", path);
 
 		$location.path(path + "/" + (data ? data.Id : ""));
+		$(".popover").hide();
 	};
 
 	$scope.updateDifficultyModal = function (data) {
 		if (data != null) {
 			sessionStorage.setItem("Difficulty", data);
-			$("#submit-btn-modal").prop("disabled", false);
-			document.getElementById("submit-btn-modal").style.opacity = "1";
-			document.getElementById("submit-btn-modal").style.height = "auto";
-			document.getElementById("submit-btn-modal-row").style.height = "auto";
-			document.getElementById("submit-btn-modal-row").style.margin = "35px";
 			if (data == "easy") {
+				$("#submit-btn-modal").prop("disabled", false);
+				document.getElementById("submit-btn-test-modal").style.display = "none";
+				document.getElementById("submit-btn-test-modal-row").style.display = "none";
+				document.getElementById("submit-btn-modal").style.display = "block";
+				document.getElementById("submit-btn-modal-row").style.display = "block";
 				document.getElementById("easyDifficultyModal").style.boxShadow = "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
 				document.getElementById("mediumDifficultyModal").style.boxShadow = "none";
 			} else {
+				$("#submit-btn-test-modal").prop("disabled", false);
+				document.getElementById("submit-btn-modal").style.display = "none";
+				document.getElementById("submit-btn-modal-row").style.display = "none";
+				document.getElementById("submit-btn-test-modal").style.display = "block";
+				document.getElementById("submit-btn-test-modal-row").style.display = "block";
 				document.getElementById("mediumDifficultyModal").style.boxShadow = "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
 				document.getElementById("easyDifficultyModal").style.boxShadow = "none";
 			}

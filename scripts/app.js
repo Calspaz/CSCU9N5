@@ -18,6 +18,10 @@ binaryTestApp.config(function($routeProvider) {
         templateUrl: 'views/binaryTest.html',
         controller: 'binaryTestController'
     }).
+    when('/BinaryTakeTest', {
+        templateUrl: 'views/takeTest.html',
+        controller: 'binaryTakeTestController'
+    }).
     otherwise({
         redirectTo: '/'
     });

@@ -4,6 +4,12 @@ nav {
     height: 79px;
 }
 
+@media only screen and (max-width : 448px) {
+    nav {
+        height: 140px;
+    }
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -174,12 +180,10 @@ nav ul a {
 	transition: all ease 2s;
     border-radius: 10px;
     width: 100%;
-    opacity: 0;
 }
 
-#submit-btn-modal-row, .card-action #submit-btn-modal {
-    height: 0;
-    margin: 0;
+#submit-btn-modal-row, .card-action #submit-btn-modal, #submit-btn-test-modal-row, .card-action #subit-btn-test-modal {
+    display: none;
 }
 
 .card-action #submit-btn-modal:hover {
