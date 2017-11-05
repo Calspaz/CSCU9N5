@@ -13,6 +13,10 @@ nav {
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 64px;
+    line-height: 69px;
+}
 
 nav form {
     height: 100%; 
@@ -28,7 +32,8 @@ nav ul li {
 }
 
 nav ul a {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 69px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .brand-colour {
@@ -141,6 +146,10 @@ nav ul a {
 .toast {
     cursor: pointer;
     border-radius: 10px;
+}
+
+.popover[class*=tour-] {
+    z-index: 500;
 }
 
 .popover .end-tour-button {
@@ -270,7 +279,7 @@ nav ul a {
 }
 
 .binary-row .s12, .binary-row .m12,.binary-row .l12 {
-    height: 20%;
+    height: 21%;
     margin: auto 0;
 }
 
@@ -279,7 +288,7 @@ nav ul a {
 }
 
 .binary-row .s12:last-child, .binary-row .m12:last-child,.binary-row .l12:last-child {
-    height: 15%;
+    height: auto;
 }
 
 .binary-row .card {
