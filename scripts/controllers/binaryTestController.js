@@ -11,7 +11,7 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
     $scope.row3digit1 = $scope.row3digit2 = $scope.row3digit3 = $scope.row3digit4 = $scope.row3digit5 = $scope.row3digit6 = $scope.row3digit7 = $scope.row3digit8 = false;
     $scope.row4digit1 = $scope.row4digit2 = $scope.row4digit3 = $scope.row4digit4 = $scope.row4digit5 = $scope.row4digit6 = $scope.row4digit7 = $scope.row4digit8 = false;
     $scope.row5digit1 = $scope.row5digit2 = $scope.row5digit3 = $scope.row5digit4 = $scope.row5digit5 = $scope.row5digit6 = $scope.row5digit7 = $scope.row5digit8 = false;
-
+    $scope.selectedClass = false;
     $(document).ready(function () {
         $('.tooltipped').tooltip({ delay: 50 });
         $scope.difficulty = sessionStorage.getItem("Difficulty") || "easy";
@@ -39,13 +39,13 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
                 {
                     element: "#tour-column-headers",
                     title: "Firstly...",
-                    content: "Each column represents 1 bit from an 8 bit byte.",
+                    content: "Each column represents 1 bit from an 8 bit byte. The 8 bit byte is made up of the header values shown above, but is represented by the accompanying 0's and 1's.",
                     placement: "bottom"
                 },
                 {
                     element: "#tour-column-first-input",
                     title: "Secondly...",
-                    content: "Each of these rectangles(a bit) operates as a switch - the value can be 1, or it can be switched to 0 (by clicking on them!).",
+                    content: "Each of these rectangles (a bit) operates as a switch - the value can be 1, or it can be switched to 0 (by clicking on them!).",
                     placement: "bottom"
                 },
                 {
@@ -57,13 +57,13 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
                 {
                     element: "#tour-column-bottom-inputs",
                     title: "Thirdly...",
-                    content: "If a bit is 'on' the header value, shown at the top of each column, is added to the total. As you'd expect if a bit is 'off', the total value of the 8 bit byte doesn't change.",
+                    content: "If a bit is 'on', the header value shown at the top of that column is added to the total. As you'd expect if a bit is 'off', the total value of the 8 bit byte doesn't change.",
                     placement: "bottom"
                 },
                 {
                     element: "#tour-column-summary",
                     title: "Finally",
-                    content: "All of the bits that are turned on (value = 1) have their header values added together to essentially convert their value into a decimal value. Have a play around with the empty byte's and try to understand how it works. After you feel you have a good grasp of how it works, maybe try going through it without any help?",
+                    content: "All of the bits that are turned on (value = 1) have their header values added together to convert their binary value into a decimal value. Have a play around with the empty byte's and try to understand how it works. When you feel confident, go through it without any help.",
                     placement: "right"
                 }
             ]
@@ -76,7 +76,13 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
         tour.start();
     });
 
+    $scope.updateStyle = function (){
+        $scope.selectedClass = $scope.selectedClass === false ? true: false;
+    };
+
     $scope.updateRowSummary = function (row) {
+
+        var x = this;
         if (row == "row1") {
             var total = 0;
 
