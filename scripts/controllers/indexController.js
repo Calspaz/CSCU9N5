@@ -1,5 +1,6 @@
 binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContext", function($scope, $location, context) {
-
+	var clickSound = new Audio('sounds/click.mp3');
+	var switchSound = new Audio('sounds/switch.mp3');
     $scope.activeView = sessionStorage.getItem("storedPath");
 
     $(function() { // Initialise modal
@@ -54,4 +55,11 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
         });
     });
 
+    $scope.clickSound = function() {
+        clickSound.play();
+    };
+
+	$scope.switchSound = function() {
+        switchSound.play();
+    };
 }]);

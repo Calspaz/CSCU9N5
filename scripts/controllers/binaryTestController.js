@@ -31,7 +31,7 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
                         "<button class='btn btn-default grey darken-2 white-text' data-role='prev'><b>«</b></button>" +
                         "<button class='btn btn-default grey darken-2 white-text' data-role='next'><b>»</b></button>" +
                         "</div>" +
-                        "<button class='btn grey darken-2 white-text btn-default end-tour-button' data-role='end'>End tour</button>" +
+                        "<button class='btn grey darken-2 white-text btn-default end-tour-button' data-role='end'>Close</button>" +
                         "</div>"
                 );
             },

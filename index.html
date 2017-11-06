@@ -9,6 +9,7 @@
     <script src="scripts/jquery/jquery-ui.js"></script>
     <script src="scripts/angular/angular.js"></script>
     <script src="scripts/angular/angular-route.js"></script>
+    <script src="scripts/angular/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jqueryui/jquery-ui.css"/>
@@ -32,14 +33,14 @@
         </div>
     </nav>
 
-    <div class="page-spacer" ng-view>
+    <div class="page-spacer view" ng-view>
 
     </div>
     <div id="optionsModal" class="modal">
         <div class="modal-content">
             <div class="row">
                 <div class="col s6 l4 offset-l1">
-                    <div class="card hoverable card-d" id="easyDifficultyModal" ng-click="updateDifficultyModal('easy')">
+                    <div class="card hoverable card-d" id="easyDifficultyModal" ng-click="updateDifficultyModal('easy'); clickSound();">
                         <div class="row black-text"><b>Refresh Your Memory</b></div>
                         <div class="card-content card-difficulty black-text">
                             <i class="large material-icons">help_outline</i>
@@ -47,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col s6 l4 offset-l2">
-                    <div class="card hoverable card-d" id="mediumDifficultyModal" ng-click="updateDifficultyModal('medium')">
+                    <div class="card hoverable card-d" id="mediumDifficultyModal" ng-click="updateDifficultyModal('medium'); clickSound();">
                         <div class="row black-text"><b>Take A Test</b></div>
                         <div class="card-content card-difficulty black-text">
                             <i class="large material-icons">error_outline</i>

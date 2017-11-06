@@ -36,6 +36,30 @@ nav ul a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.view {
+    position: absolute;/*Sets the view*/
+    top:69px;
+    left: 0;
+    width: 100%;
+    transition: 300ms;   
+}
+.view.ng-enter{
+  left: -100%;
+  transition: 1s; /*Slowly pulls in the next view*/ 
+}
+
+.view.ng-enter.ng-enter-active{
+  left: 0%; /*Moves next view to the center*/
+}
+
+.view.ng-leave{
+  left: 0%; 
+  transition: 0s; /*Removes current view straight away*/
+}
+view.ng-leave.ng-leave-active{
+  left: 100%;  /*Moves last view to the left*/
+}
+
 .brand-colour {
 	background-color: #582C83;
 }

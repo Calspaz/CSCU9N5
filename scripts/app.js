@@ -1,10 +1,10 @@
-var binaryTestApp = angular.module('binaryCourseApplication', ['ngRoute']);
+var binaryTestApp = angular.module('binaryCourseApplication', ['ngRoute', 'ngAnimate']);
 
 binaryTestApp.config(function($routeProvider) {
     $routeProvider.
     when('/', {
         templateUrl: 'views/home.html',
-        controller: 'homeController', 
+        controller: 'homeController'
     }).
     when('/Help', {
         templateUrl: 'views/help.html',
