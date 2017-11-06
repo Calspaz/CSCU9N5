@@ -1,3 +1,3 @@
-binaryTestApp.controller('helpController', ["$scope", "$location", "_dataContext", function($scope, $location, context) {
+binaryTestApp.controller('theoryController', ["$scope", "$location", "_dataContext", function($scope, $location, context) {
 
 }]);
