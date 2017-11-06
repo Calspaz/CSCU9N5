@@ -1,0 +1,17 @@
+<svg width="2000" height="450" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="2002" height="452" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="165.014763" y="586.762455" width="57.010228" height="228.964829" id="svg_5" stroke="#000" transform="rotate(89.90290069580078 193.51989746093744,701.244873046875) "/>
+  <text fill="#ffffff" stroke-width="0" stroke-opacity="null" x="244.094503" y="290" id="svg_13" font-size="250" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" font-weight="bold" transform="matrix(1.320853352546692,0,0,1,-55.988910019397736,0) " stroke="#000">1</text>
+  <text fill="#ffffff" stroke-width="0" stroke-opacity="null" x="373.734212" y="286" id="svg_14" font-size="250" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" font-weight="bold" transform="matrix(1.3071999549865723,0,0,1,-83.71198773384094,0) " stroke="#000">0</text>
+  <text fill="#ffffff" stroke-width="0" stroke-opacity="null" x="154.180961" y="286" id="svg_15" font-size="250" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" font-weight="bold" transform="matrix(1.3071999549865723,0,0,1,-83.71198773384094,0) " stroke="#000">0</text>
+  <text fill="#ffffff" stroke-width="0" stroke-opacity="null" x="26.365745" y="290" id="svg_16" font-size="250" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" font-weight="bold" transform="matrix(1.320853352546692,0,0,1,-55.988910019397736,0) " stroke="#000">1</text>
+  <text fill="#ffffff" stroke="#000" stroke-width="0" stroke-opacity="null" x="667.833342" y="289" id="svg_17" font-size="160" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" font-weight="bold">Binary Course</text>
+ </g>
+</svg>
