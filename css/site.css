@@ -401,7 +401,11 @@ view.ng-leave.ng-leave-active{
     transform: translate(0,-50%);  
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 10px;
-    word-spacing: 20px 
+    word-spacing: 20px;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .hero-description-two {
@@ -416,7 +420,11 @@ view.ng-leave.ng-leave-active{
     transform: translate(0,-50%);  
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 10px;
-    word-spacing: 20px 
+    word-spacing: 20px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .hero-continue-container {
@@ -428,6 +436,11 @@ view.ng-leave.ng-leave-active{
     -webkit-transform: translate(0,-50%); /* Safari */
     transform: translate(0,-50%);  
     color: rgba(255, 255, 255, 0.6);
+    -webkit-animation: slideIn 1s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slideIn 1s forwards;
+    animation-delay: 3s;
+    left: -1500px;
 }
 
 .hero-continue-container a {
@@ -466,6 +479,43 @@ view.ng-leave.ng-leave-active{
     font-weight: bold;
     letter-spacing: 10px;
     word-spacing: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    margin: 0 auto;
+    -webkit-animation: keyboard 2s steps(100, end);
+    animation: keyboard 2s steps(100, end);
+}
+@-webkit-keyframes keyboard {
+    from { width: 0; } 
+}
+
+@keyframes keyboard{ 
+    from { width: 0; } 
+} 
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes slideIn {
+    100% { left: 0; }
+}
+
+@keyframes slideIn {
+    100% { left: 0; }
+}
+
+.fade-in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 .overlay {
