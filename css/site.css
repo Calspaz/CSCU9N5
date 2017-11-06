@@ -1,7 +1,10 @@
+ @font-face { font-family: Digital; src: url('/font/digital/DS-DIGI.TTF'); } 
+ @font-face { font-family: Digital; font-weight: bold; src: url('/font/digital/DS-DIGIB.TTF');}
+
 /*nav bar customisations*/
 nav {
 	background-color: #582C83;
-    height: 79px;
+    height: 8.4vh;
 }
 
 @media only screen and (max-width : 448px) {
@@ -12,6 +15,7 @@ nav {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #582C83;
 }
 nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 64px;
@@ -36,9 +40,20 @@ nav ul a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.no-bottom-margin {
+    margin-bottom: 0!important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.card .small-padding {
+    padding: 1px;
+}
+
 .view {
     position: absolute;/*Sets the view*/
-    top:69px;
     left: 0;
     width: 100%;
     transition: 300ms;   
@@ -111,7 +126,8 @@ view.ng-leave.ng-leave-active{
 }
 /*Creates padding between sides of screen and main ng-view. Used on index page*/
 .page-spacer {
-	padding: 0 15px;
+	padding: 0;
+    background-color: #ffffff;
 }
 
  /*Moves notes to the left when creating responses*/
@@ -137,7 +153,7 @@ view.ng-leave.ng-leave-active{
  }
 
 .progress {
-    height: 15px;
+    height: 16px;
     border-radius: 0;
 }
 
@@ -213,6 +229,10 @@ view.ng-leave.ng-leave-active{
 	transition: all ease 2s;
     border-radius: 10px;
     width: 100%;
+}
+
+.modal .modal-content {
+    padding-bottom: 0;
 }
 
 #submit-btn-modal-row, .card-action #submit-btn-modal, #submit-btn-test-modal-row, .card-action #subit-btn-test-modal {
@@ -330,8 +350,8 @@ view.ng-leave.ng-leave-active{
 }
 
 .binary-row .card:hover {
-    -moz-box-shadow: inset 200px 0 0 0 #000000;
-   -webkit-box-shadow: inset 200px 0 0 0 #000000;
+    -moz-box-shadow: inset 200px 0 0 0 #e5ba06;
+   -webkit-box-shadow: inset 200px 0 0 0 #e5ba06;
     box-shadow: inset 200px 0 0 0 #e5ba06;
     color: #282828!important;
     background-color: #ffffff!important;
@@ -360,4 +380,110 @@ view.ng-leave.ng-leave-active{
     box-shadow: inset 200px 0 0 0 #e5ba06;
     color: #282828!important;
     background-color: #ffffff!important;
+}
+
+#hero{
+  background-image:url('/images/main-hero-image.jpg');
+  background-size:cover;
+  position:relative;
+  height: 91.6vh;
+}
+
+.hero-description {
+   position:absolute;
+  top:40%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:28px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 10px;
+    word-spacing: 20px 
+}
+
+.hero-description-two {
+   position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:24px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 10px;
+    word-spacing: 20px 
+}
+
+.hero-continue-container {
+   position:absolute;
+  top:70%;
+  text-align:center;
+  width:100%;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-continue-container a {
+    -moz-box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.01);
+   -webkit-box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.01);
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.01);
+    -webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-continue-container a:hover {
+    -moz-box-shadow: inset 200px 0 0 0 rgba(224, 224, 224, 0.8);
+   -webkit-box-shadow: inset 200px 0 0 0 rgba(224, 224, 224, 0.8);
+    box-shadow: inset 200px 0 0 0 rgba(224, 224, 224, 0.8);
+    color: #282828;
+    background-color: rgba(224, 224, 224, 0.4)!important;
+}
+
+.header{
+  position:absolute;
+  top:20%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+}
+
+.header h1 {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Digital;
+    font-weight: bold;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.image-placeholder-container {
+    width: 100%;
+    height: auto;
+}
+
+.image-placeholder {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/images/video-placeholder.svg');
 }

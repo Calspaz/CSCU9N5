@@ -24,6 +24,7 @@
         <div class="nav-wrapper">
             <a href="" ng-click="changeView()" class="navbar-brand"><img alt="Brand" src="images/Binary_Logo_Rectangle_Black.svg"></a>
             <ul class="right">
+                <li><a href="" ng-click="changeView('/')"><i class="material-icons right">home</i><b>Home</b></a></li>
                 <li><a href="" ng-click="changeView('/Help')"><i class="material-icons right">help_outline</i><b>Help</b></a></li>
                 <li><a href="" ng-click="openModal()"><i class="material-icons right">add_circle_outline</i><b>Take New Test</b></a></li>
             </ul>
@@ -40,7 +41,7 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col s6 l4 offset-l1">
-                    <div class="card hoverable card-d" id="easyDifficultyModal" ng-click="updateDifficultyModal('easy'); clickSound();">
+                    <div class="card hoverable card-d" id="easyDifficultyModal" ng-click="updateDifficultyModal('easy');">
                         <div class="row black-text"><b>Refresh Your Memory</b></div>
                         <div class="card-content card-difficulty black-text">
                             <i class="large material-icons">help_outline</i>
@@ -48,7 +49,7 @@
                     </div>
                 </div>
                 <div class="col s6 l4 offset-l2">
-                    <div class="card hoverable card-d" id="mediumDifficultyModal" ng-click="updateDifficultyModal('medium'); clickSound();">
+                    <div class="card hoverable card-d" id="mediumDifficultyModal" ng-click="updateDifficultyModal('medium');">
                         <div class="row black-text"><b>Take A Test</b></div>
                         <div class="card-content card-difficulty black-text">
                             <i class="large material-icons">error_outline</i>
@@ -58,13 +59,13 @@
             </div>
             <div class="row" id="submit-btn-modal-row">
                 <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4 card-action">
-                    <button href="" id="submit-btn-modal" ng-click="dismiss(); changeView('/BinaryTest');" class="waves-effect waves-light btn-large grey darken-2 white-text"
+                    <button href="" id="submit-btn-modal" ng-click="dismiss(); changeView('/BinaryTest'); clickSound();" class="waves-effect waves-light btn-large grey darken-2 white-text"
                         disabled><i class="material-icons right">arrow_forward</i><b>Continue</b></button>
                 </div>
             </div>
             <div class="row" id="submit-btn-test-modal-row">
                 <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4 card-action">
-                    <button href="" id="submit-btn-test-modal" ng-click="dismiss(); changeView('/BinaryTakeTest');" class="waves-effect waves-light btn-large grey darken-2 white-text"
+                    <button href="" id="submit-btn-test-modal" ng-click="dismiss(); changeView('/BinaryTakeTest'); clickSound();" class="waves-effect waves-light btn-large grey darken-2 white-text"
                         disabled><i class="material-icons right">arrow_forward</i><b>Continue</b></button>
                 </div>
             </div>

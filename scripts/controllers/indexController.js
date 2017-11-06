@@ -34,8 +34,10 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
                 document.getElementById("submit-btn-test-modal").style.display = "none";
                 document.getElementById("submit-btn-test-modal-row").style.display = "none";
                 document.getElementById("submit-btn-modal").style.display = "block";
-                document.getElementById("submit-btn-modal-row").style.display = "block";
+                document.getElementById("submit-btn-modal-row").style.display = "block";    
                 document.getElementById("easyDifficultyModal").style.boxShadow = "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+				document.getElementById("easyDifficultyModal").style.border = "2px solid #2c1642";
+				document.getElementById("mediumDifficultyModal").style.border = "none";
                 document.getElementById("mediumDifficultyModal").style.boxShadow = "none";
             } else {
                 $("#submit-btn-test-modal").prop("disabled", false);
@@ -45,6 +47,8 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
                 document.getElementById("submit-btn-test-modal-row").style.display = "block";
                 document.getElementById("mediumDifficultyModal").style.boxShadow = "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
                 document.getElementById("easyDifficultyModal").style.boxShadow = "none";
+				document.getElementById("mediumDifficultyModal").style.border = "2px solid #2c1642";
+				document.getElementById("easyDifficultyModal").style.border = "none";
             }
         }
     };
