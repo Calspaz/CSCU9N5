@@ -6,9 +6,9 @@ binaryTestApp.config(function($routeProvider) {
         templateUrl: 'views/home.html',
         controller: 'homeController'
     }).
-    when('/Help', {
-        templateUrl: 'views/help.html',
-        controller: 'helpController'
+    when('/Theory', {
+        templateUrl: 'views/theory.html',
+        controller: 'theoryController'
     }).
     when('/CreateChat', {
         templateUrl: 'views/createChats.html',

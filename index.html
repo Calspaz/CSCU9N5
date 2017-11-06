@@ -11,10 +11,13 @@
     <script src="scripts/angular/angular-route.js"></script>
     <script src="scripts/angular/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/jqueryui/jquery-ui.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/jqueryui/jquery-ui.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/materialize/materialize.css" media="screen,projection" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/site.css" />
     <title>Binary Course</title>
 </head>
@@ -24,9 +27,9 @@
         <div class="nav-wrapper">
             <a href="" ng-click="changeView()" class="navbar-brand"><img alt="Brand" src="images/Binary_Logo_Rectangle_Black.svg"></a>
             <ul class="right">
-                <li><a href="" ng-click="changeView('/')"><i class="material-icons right">home</i><b>Home</b></a></li>
-                <li><a href="" ng-click="changeView('/Help')"><i class="material-icons right">help_outline</i><b>Help</b></a></li>
-                <li><a href="" ng-click="openModal()"><i class="material-icons right">add_circle_outline</i><b>Practicals</b></a></li>
+                <li><a href="" ng-click="changeView('/')"><i class="fa fa-lg fa-home right" aria-hidden="true"></i><b>Home</b></a></li>
+                <li><a href="" ng-click="changeView('/Theory')"><i class="fa fa-lg fa-book right" aria-hidden="true"></i><b>Theory</b></a></li>
+                <li><a href="" ng-click="openModal()"><i class="fa fa-lg fa-keyboard-o right" aria-hidden="true"></i><b>Practicals</b></a></li>
             </ul>
             <div class="progress">
                 <div class="determinate" style="width: 100%"></div>
@@ -82,7 +85,7 @@
 <script type="text/javascript" src="scripts/controllers/homeController.js"></script>
 <script type="text/javascript" src="scripts/controllers/binaryTestController.js"></script>
 <script type="text/javascript" src="scripts/controllers/binaryTakeTestController.js"></script>
-<script type="text/javascript" src="scripts/controllers/helpController.js"></script>
+<script type="text/javascript" src="scripts/controllers/theoryController.js"></script>
 <script type="text/javascript" src="scripts/controllers/createChatController.js"></script>
 
 </html>
