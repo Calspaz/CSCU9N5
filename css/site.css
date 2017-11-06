@@ -1,5 +1,5 @@
- @font-face { font-family: Digital; src: url('/font/digital/DS-DIGI.TTF'); } 
- @font-face { font-family: Digital; font-weight: bold; src: url('/font/digital/DS-DIGIB.TTF');}
+ @font-face { font-family: Digital; src: url('../../font/digital/DS-DIGI.TTF'); } 
+ @font-face { font-family: Digital; font-weight: bold; src: url('../../font/digital/DS-DIGIB.TTF');}
 
 /*nav bar customisations*/
 nav {
@@ -383,7 +383,7 @@ view.ng-leave.ng-leave-active{
 }
 
 #hero{
-  background-image:url('/images/main-hero-image.jpg');
+  background-image:url('../../images/main-hero-image.jpg');
   background-size:cover;
   position:relative;
   height: 91.6vh;
@@ -485,5 +485,5 @@ view.ng-leave.ng-leave-active{
     height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/images/video-placeholder.svg');
+    background-image: url('../../images/video-placeholder.svg');
 }
