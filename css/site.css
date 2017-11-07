@@ -649,6 +649,7 @@ view.ng-leave.ng-leave-active{
     animation: none;
 }
 
-.card.disabled:hover {
-    
+.card.card-greyed {
+    background-color: #080808;
+    color: #ffffff;
 }
