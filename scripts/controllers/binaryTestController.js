@@ -15,7 +15,6 @@ binaryTestApp.controller('binaryTestController', ["$scope", "$location", "_dataC
     $(document).ready(function () {
         $('.tooltipped').tooltip({ delay: 50 });
         $scope.difficulty = sessionStorage.getItem("Difficulty") || "easy";
-        _toast.info("Good luck!");
 
         // Instance the tour
         var tour = new Tour({

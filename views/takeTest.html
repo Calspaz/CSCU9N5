@@ -1,1 +1,52 @@
-TAKE A TEST SOON
+<div class="take-test-container">
+    <div class="row">
+        <div class="col s12 l12">
+            <div class="card card-header">
+                <div class="card-content black-text small-padding">
+                    <div class="card-title">
+                        <h4 class="center-align"><b>Select a test to begin!</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="easy-difficulty-slide">
+        <div class="col s12 l2 offset-l5 tooltipped" data-position="right" data-delay="50" data-tooltip="Lets get started!">
+            <div class="card hoverable card-d" ng-click="changeView('/TakeEasyTest')">
+                <div class="row black-text">
+                    <h5><b>EASY</b></h5>
+                </div>
+                <div class="card-content card-difficulty black-text">
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="medium-difficulty-slide">
+        <div class="col s12 l4 offset-l4 tooltipped" data-position="right" data-delay="50" data-tooltip="There won't be as much help this time...">
+            <div class="card hoverable card-d" ng-click="changeView('/TakeMediumTest')">
+                <div class="row black-text">
+                    <h5><b>MEDIUM</b></h5>
+                </div>
+                <div class="card-content card-difficulty black-text">
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="hard-difficulty-slide">
+        <div class="col s12 l6 offset-l3 tooltipped" data-position="right" data-delay="50" data-tooltip="You're on your own!">
+            <div class="card hoverable card-d" ng-click="changeView('/TakeHardTest')">
+                <div class="row black-text">
+                    <h5><b>HARD</b></h5>
+                </div>
+                <div class="card-content card-difficulty black-text">
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

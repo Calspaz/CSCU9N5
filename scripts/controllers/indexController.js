@@ -20,7 +20,9 @@ binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContex
         sessionStorage.setItem("storedPath", path);
 
         $location.path(path + "/" + (data ? data.Id : ""));
-        $(".popover").hide();
+        $(".popover").hide(); //Removes tour on view change
+        $('.tooltipped').tooltip('remove'); //Removes tooltips on view change
+        Materialize.Toast.removeAll(); //Removes toasts on view change
     };
 
     $scope.openModal = function() {

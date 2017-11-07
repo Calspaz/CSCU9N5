@@ -22,6 +22,18 @@ binaryTestApp.config(function($routeProvider) {
         templateUrl: 'views/takeTest.html',
         controller: 'binaryTakeTestController'
     }).
+    when('/TakeEasyTest', {
+        templateUrl: 'views/takeEasyTest.html',
+        controller: 'binaryTakeEasyTestController'
+    }).
+    when('/TakeMediumTest', {
+        templateUrl: 'views/takeMediumTest.html',
+        controller: 'binaryTakeMediumTestController'
+    }).
+    when('/TakeHardTest', {
+        templateUrl: 'views/takeHardTest.html',
+        controller: 'binaryTakeHardTestController'
+    }).
     otherwise({
         redirectTo: '/'
     });

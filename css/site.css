@@ -40,6 +40,10 @@ nav ul a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 .no-bottom-margin {
     margin-bottom: 0!important;
 }
@@ -517,6 +521,14 @@ view.ng-leave.ng-leave-active{
     100% { left: 0; }
 }
 
+@-webkit-keyframes slideInMargin {
+    100% { margin-left: 0; }
+}
+
+@keyframes slideInMargin {
+    100% { margin-left: 0; }
+}
+
 @-webkit-keyframes blinker {
     50% { opacity: 0; }
 }
@@ -552,4 +564,91 @@ view.ng-leave.ng-leave-active{
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('/images/video-placeholder.svg'), url('/CSCU9N5/images/video-placeholder.svg'); /*Fallback url is for hosted version on Github Pages*/
+}
+
+.take-test-container {
+    height: 100%;
+}
+
+.verticle-align-card-container {
+    display: table;
+    height: 70px;
+}
+
+.verticle-align-card {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.submit-brand {
+    background-color: #582C83;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.01);
+    -webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+    border-radius: 10px; 
+}
+
+.submit-brand:hover {
+    box-shadow: inset 600px 0 0 0 #e5ba06;
+    color: #282828!important;
+    background-color: #ffffff!important;
+}
+
+.submit-brand:active {
+    background-color: #e5ba06;
+    color: #282828!important;
+}
+
+.submit-brand:focus {
+    background-color: #e5ba06;
+    color: #282828!important;
+}
+
+.card .card-content .card-title .card-title-padding {
+    padding: 10px;
+}
+
+.card.round-card {
+    border-radius: 10px;
+}
+
+.star-row {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.star-row .star-holder {
+    text-align: center;
+}
+
+#easy-difficulty-slide {
+    -webkit-animation: slideInMargin 1.5s forwards;
+    animation: slideInMargin 1.5s forwards;
+    margin-left: -2000px;
+}
+
+#medium-difficulty-slide {
+    -webkit-animation: slideInMargin 2s forwards;
+    animation: slideInMargin 2s forwards;
+    margin-left: -2000px;
+}
+
+#hard-difficulty-slide {
+    -webkit-animation: slideInMargin 2.5s forwards;
+    animation: slideInMargin 2.5s forwards;
+    margin-left: -2000px;
+}
+
+.card.disabled {
+    cursor: default;
+    transition: none;
+    animation: none;
+}
+
+.card.disabled:hover {
+    
 }
