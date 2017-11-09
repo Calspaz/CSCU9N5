@@ -1,4 +1,4 @@
-binaryTestApp.controller('binaryTakeHardTestController', ["$scope", "$location", "_dataContext", "_toast", function ($scope, $location, context, _toast) {
+binaryTestApp.controller('decimalTakeHardTestController', ["$scope", "$location", "_toast", function ($scope, $location, _toast) {
     var row1digit1, row1digit2, row1digit3, row1digit4, row1digit5, row1digit6, row1digit7, row1digit8;
     var row2digit1, row2digit2, row2digit3, row2digit4, row2digit5, row2digit6, row2digit7, row2digit8;
     var row3digit1, row3digit2, row3digit3, row3digit4, row3digit5, row3digit6, row3digit7, row3digit8;

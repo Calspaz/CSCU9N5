@@ -10,29 +10,33 @@ binaryTestApp.config(function($routeProvider) {
         templateUrl: 'views/theory.html',
         controller: 'theoryController'
     }).
-    when('/CreateChat', {
-        templateUrl: 'views/createChats.html',
-        controller: 'createChatController'
+    when('/DecimalTheory', {
+        templateUrl: 'views/decimalTheory.html',
+        controller: 'decimalTheoryController'
     }).
-    when('/BinaryTest', {
-        templateUrl: 'views/binaryTest.html',
-        controller: 'binaryTestController'
+    when('/RefreshChoices', {
+        templateUrl: 'views/refreshChoices.html',
+        controller: 'refreshChoicesController'
     }).
-    when('/BinaryTakeTest', {
-        templateUrl: 'views/takeTest.html',
-        controller: 'binaryTakeTestController'
+    when('/DecimalRefresh', {
+        templateUrl: 'views/decimalRefresh.html',
+        controller: 'decimalRefreshController'
     }).
-    when('/TakeEasyTest', {
-        templateUrl: 'views/takeEasyTest.html',
-        controller: 'binaryTakeEasyTestController'
+    when('/TestChoices', {
+        templateUrl: 'views/testChoices.html',
+        controller: 'testChoicesController'
     }).
-    when('/TakeMediumTest', {
-        templateUrl: 'views/takeMediumTest.html',
-        controller: 'binaryTakeMediumTestController'
+    when('/DecimalTakeTest', {
+        templateUrl: 'views/decimalTakeTest.html',
+        controller: 'decimalTakeTestController'
     }).
-    when('/TakeHardTest', {
-        templateUrl: 'views/takeHardTest.html',
-        controller: 'binaryTakeHardTestController'
+    when('/DecimalTakeEasyTest', {
+        templateUrl: 'views/decimalTakeEasyTest.html',
+        controller: 'decimalTakeEasyTestController'
+    }).
+    when('/DecimalTakeHardTest', {
+        templateUrl: 'views/decimalTakeHardTest.html',
+        controller: 'decimalTakeHardTestController'
     }).
     otherwise({
         redirectTo: '/'

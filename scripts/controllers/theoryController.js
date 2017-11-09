@@ -1,3 +1,5 @@
-binaryTestApp.controller('theoryController', ["$scope", "$location", "_dataContext", function($scope, $location, context) {
-
+binaryTestApp.controller('theoryController', ["$scope", "$location", function($scope, $location) {
+    $(function() {
+        $('.tooltipped').tooltip({ delay: 50 });
+    });
 }]);

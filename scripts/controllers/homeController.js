@@ -1,4 +1,4 @@
-binaryTestApp.controller('homeController', ["$scope", "$location", "_dataContext", function ($scope, $location, context) {
+binaryTestApp.controller('homeController', ["$scope", "$location", function ($scope, $location) {
 
 
 }]);

@@ -1,22 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
-<g>
-<title>background</title>
-<rect x="-1" y="-1" width="902" height="902" fill="#fff"/>
-<g x="0" y="0" display="none" overflow="visible">
-<rect width="100%" height="100%" fill="url(#gridpattern)" stroke-width="0"/>
-</g>
-</g>
-<g>
-<title>Layer 1</title>
-<rect x=".625" y="-23.125" width="11.25" height="953.75" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<rect x="889.38" y="-23.125" width="11.25" height="953.75" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<rect transform="rotate(-89.955 450 895)" x="444.38" y="418.12" width="11.25" height="953.75" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<rect transform="rotate(-89.989 436.25 6.25)" x="430.62" y="-470.62" width="11.25" height="953.75" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<rect transform="rotate(45.042 448.64 451.42)" x="443.02" y="-216.94" width="11.25" height="1336.7" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<rect transform="rotate(134.89 443.32 443)" x="437.69" y="-191.32" width="11.25" height="1268.6" fill="#c7c7c7" stroke="#c7c7c7" stroke-width="1.5"/>
-<path d="m365.26 311.88l-0.26148 264.38 205-122.39" fill="#c7c7c7" fill-opacity="null" opacity=".5" stroke="#c7c7c7" stroke-width="1.5"/>
-<text x="350.625" y="266.875" fill="#c7c7c7" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" stroke="#c7c7c7" stroke-opacity="null" stroke-width="0" xml:space="preserve">PLAY VIDEO</text>
-<text transform="matrix(1 0 0 1.129 0 -94.839)" x="101.875" y="488.357142" fill="#595959" font-family="Helvetica, Arial, sans-serif" font-size="34" stroke="#c7c7c7" stroke-opacity="null" stroke-width="0" xml:space="preserve">Short video covering the fundamentals of binary</text>
-</g>
+<svg width="900" height="900" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect id="svg_1" fill="#fff" height="902" width="902" y="-1" x="-1"/>
+  <g id="svg_2" display="none">
+   <rect id="svg_3" stroke-width="0" fill="url(#gridpattern)" height="100%" width="100%"/>
+  </g>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_4" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="953.75" width="11.25" y="-23.125" x="0.625"/>
+  <rect id="svg_5" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="953.75" width="11.25" y="-23.125" x="889.38"/>
+  <rect id="svg_6" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="953.75" width="11.25" y="418.12" x="444.38" transform="rotate(-89.95500183105469 450.00000000000006,895.0000000000001) "/>
+  <rect id="svg_7" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="953.75" width="11.25" y="-470.62" x="430.62" transform="rotate(-89.98899841308594 436.25000000000006,6.250000000000025) "/>
+  <rect id="svg_8" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="1336.7" width="11.25" y="-216.94" x="443.02" transform="rotate(45.04199981689453 448.6400146484374,451.4200134277345) "/>
+  <rect id="svg_9" stroke-width="1.5" stroke="#c7c7c7" fill="#c7c7c7" height="1268.6" width="11.25" y="-191.32" x="437.69" transform="rotate(134.88999938964844 443.32000732421875,443) "/>
+  <path id="svg_10" stroke-width="1.5" stroke="#c7c7c7" opacity="0.5" fill-opacity="null" fill="#c7c7c7" d="m365.26,311.88l-0.26148,264.38l205,-122.39"/>
+  <text id="svg_11" xml:space="preserve" stroke-width="0" stroke-opacity="null" stroke="#c7c7c7" font-weight="bold" font-size="34" font-family="Helvetica, Arial, sans-serif" fill="#c7c7c7" y="266.875" x="350.625">PLAY VIDEO</text>
+  <text id="svg_12" xml:space="preserve" stroke-width="0" stroke-opacity="null" stroke="#c7c7c7" font-size="34" font-family="Helvetica, Arial, sans-serif" fill="#595959" y="497.139786" x="5.827069" transform="matrix(0.9842743277549743,0,0,1.0832877641320229,9.092388324439524,-71.56499884124457) ">Short video covering the fundamentals of binary to decimal</text>
+ </g>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
 </svg>

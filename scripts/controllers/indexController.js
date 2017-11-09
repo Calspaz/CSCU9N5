@@ -1,4 +1,4 @@
-binaryTestApp.controller('indexController', ["$scope", "$location", "_dataContext", function($scope, $location, context) {
+binaryTestApp.controller('indexController', ["$scope", "$location", function($scope, $location) {
 	var clickSound = new Audio('sounds/click.mp3');
 	var switchSound = new Audio('sounds/switch.mp3');
     $scope.activeView = sessionStorage.getItem("storedPath");
