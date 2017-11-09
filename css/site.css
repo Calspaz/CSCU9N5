@@ -251,7 +251,6 @@ view.ng-leave.ng-leave-active{
     box-shadow: inset 600px 0 0 0 #e0e0e0;
     color: #282828!important;
     background-color: #ffffff!important;
-    border: 2px solid #e0e0e0;
 } 
 
 .card .card-difficulty {
